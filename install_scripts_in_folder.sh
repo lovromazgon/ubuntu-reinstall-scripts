@@ -13,10 +13,10 @@ do
 	echo "--------------------" >> $output
 	echo "Installing $filename" >> $output
 	echo "" >> $output
-    #$filename 2&>>$output  >> $output
+	$filename 2&>>$output  >> $output
 	echo "" >> $output
-    echo "Done!" >> $output
-    echo "--------------------" >> $output
+	echo "Done!" >> $output
+	echo "--------------------" >> $output
 	echo "" >> $output
 done
 wait
