@@ -15,7 +15,6 @@ List of applications, that are installed by the scripts:
 ### apps
 - [Calibre](http://calibre-ebook.com/)
 - [Copy](https://www.copy.com)
-- [Popcorn-time](https://popcorntime.io/)
 - [Skype](http://www.skype.com/)
 - [Virtualbox](https://www.virtualbox.org/)
 
