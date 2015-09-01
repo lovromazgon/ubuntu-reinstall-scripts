@@ -18,8 +18,8 @@ sed -i 's/^#key-jump-short=.*/key-jump-short=Shift+Right/g' $vlcrc
 sed -i 's/^#key-jump+short=.*/key-jump+short=Shift+Right/g' $vlcrc
 
 # change volume keys
-sed -i 's/^#key-vol-up=.*/key-vol-up=Up	Volume Up/g' $vlcrc
-sed -i 's/^#key-vol-down=.*/key-vol-down=Down	Volume Down/g' $vlcrc
+sed -i 's/^#key-vol-up=.*/key-vol-up=Up/g' $vlcrc
+sed -i 's/^#key-vol-down=.*/key-vol-down=Down/g' $vlcrc
 
 # change encoding to eastern european Windows-1250
 sed -i 's/^#subsdec-encoding=.*/subsdec-encoding=Windows-1250/g' $vlcrc
