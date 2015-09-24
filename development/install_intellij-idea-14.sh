@@ -7,13 +7,6 @@ edition="IC"
 edition_name="Community"
 
 echo "Intellij Community is scheduled to be installed"
-echo -n "Do you want to install Intellij Ultimate Edition instead (registration key will be provided)? (y/n) > "
-read ultimate
-
-if { [ "$ultimate" = "y" ] || ["$ultimate" = "Y" ]; } then
-	edition="IU"
-	edition_name="Ultimate"
-fi
 
 intellij_name="idea${edition}-${intellij_version}"
 intellij_url="https://download.jetbrains.com/idea/${intellij_name}.tar.gz"
@@ -33,14 +26,6 @@ intellij_folder=$(find /opt/ -maxdepth 1 -name 'idea-*')
 
 echo "Setting owner of $intellij_folder to $USER"
 sudo chown -R "$USER":"$USER" $intellij_folder 
-
-if [ "$edition" = "IU" ]; then
-	echo "Generating key..."
-	echo -e "\n--------------------"
-	groovy intellij-idea-14-keygen.groovy "$USER"
-	echo -e "--------------------\n"
-	echo "You can use the key provided above to register Intellij"
-fi
 
 echo "Executing idea.sh - finish the Intellij Idea installation and quit after you are done!"
 ( exec $intellij_folder/bin/idea.sh )
